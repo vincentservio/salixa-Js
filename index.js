@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", loadIndex);
 const loadNav = () => {
   nav = document.getElementById("Nav");
   nav.innerHTML = `       <a href="#" id="homeTab">Inicio</a>
-        <a href="#" id="options">Opiniones</a>
+        <a href="#" id="commentsTab">Opiniones</a>
         <a href="#" id="galleryTab">Galeria</a>
-        <a href="#" id="Reserve">Mis Reservas</a>`;
+        <a href="#" id="reserveTab">Mis Reservas</a>`;
   clickLinks();
 };
 
 const loadHeader = () => {
-  const header = getElementById("Header");
+  const header = document.getElementById("Header");
   header.innerHTML = `
      
     <img
