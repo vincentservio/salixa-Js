@@ -1,7 +1,7 @@
 index = document.getElementById("index");
 const loadIndex = () => {
   loadNav();
-
+  loadHeader();
   loadInfo();
 };
 document.addEventListener("DOMContentLoaded", loadIndex);
@@ -13,6 +13,18 @@ const loadNav = () => {
         <a href="#" id="galleryTab">Galeria</a>
         <a href="#" id="Reserve">Mis Reservas</a>`;
   clickLinks();
+};
+
+const loadHeader = () => {
+  const header = getElementById("Header");
+  header.innerHTML = `
+     
+    <img
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mothers-day-flower-bouquet-1588610191.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*"
+      alt="header"
+    />
+    <img />
+  `;
 };
 
 const loadInfo = () => {
