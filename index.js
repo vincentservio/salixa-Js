@@ -1,19 +1,22 @@
 index = document.getElementById("index");
 const loadIndex = () => {
   loadNav();
+
   loadInfo();
 };
 document.addEventListener("DOMContentLoaded", loadIndex);
 
 const loadNav = () => {
   nav = document.getElementById("Nav");
-  nav.innerHTML = `       <a href="#">Inicio</a>
-        <a href="#">Opiniones</a>
-        <a href="#">Galeria</a>
-        <a href="#">Mis Reservas</a>`;
+  nav.innerHTML = `       <a href="#" id="homeTab">Inicio</a>
+        <a href="#" id="options">Opiniones</a>
+        <a href="#" id="galleryTab">Galeria</a>
+        <a href="#" id="Reserve">Mis Reservas</a>`;
+  clickLinks();
 };
 
 const loadInfo = () => {
+  clearClicks();
   info = document.getElementById("Info");
   info.innerHTML = `    
       
@@ -50,10 +53,11 @@ const loadInfo = () => {
              Salixa Makeup
          <br />• Maquillajes • Peinados • Cejas • Pestañas • Depilación
       </div>
-      
+
       </div>
 
 
 
     `;
+  clickLinks();
 };
