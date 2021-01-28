@@ -1,0 +1,65 @@
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  /* text-align: center; */
+  background-color: #ffffff;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.hours {
+  font-family: "Cormorant", serif;
+  font-size: 2vw;
+  /* background-color: #ff9e2c; */
+  /* position: absolute;
+  left: 6vw;
+  width: 40%;
+  margin-top: 6vw; */
+  /* padding: 50px 0px; */
+  /* text-align: center; */
+  /* -webkit-text-stroke: 1.5px rgb(29, 49, 42); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* position: relative; */
+  color: #c7caee;
+  float: left;
+}
+.Contact {
+  /* position: absolute; */
+  /* margin-top: 12vw; */
+  float: right;
+  /* width: 75%; */
+  /* padding: 75px 0px; */
+  /* position: absolute; */
+}
+.makeup {
+  /* text-align: center; */
+  color: rgb(4, 87, 87);
+}
+
+.container {
+  display: flex;
+}
+.container > div {
+  flex: 1; /*grow*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 1vw;
+  padding: 10px;
+  margin-right: 30px;
+  text-align: center;
+}
