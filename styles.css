@@ -40,10 +40,10 @@
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
 }
 .container > div {
-  flex: 1; /*grow*/
+  /* flex: 1;  */
 }
 
 .grid-container {
@@ -51,24 +51,109 @@
   grid-template-columns: auto auto auto;
   /* background-color: #2196f3; */
   padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: black;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-
+  height: 20vw;
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 20px;
   font-size: 1vw;
-  padding: 10px;
+  margin-top: 10px;
   margin-right: 30px;
   text-align: center;
 }
 .Header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
   color: white;
   font-size: 30px;
-  height: 100px;
+  height: 50vw;
+  width: 50vw;
+}
+
+.Nav {
+  /* text-align: center; */
+  background-color: rgb(238, 101, 101);
+  text-decoration: none;
+  /* padding: 30px; */
+}
+.homeTab,
+.commentTab,
+.galleryTab,
+.reserveTab {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
   width: 50%;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+a {
+  /* display: inline-block; */
+  width: 25%;
+  padding: 0.75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+
+  margin-left: 50px;
+}
+
+.two:hover ~ hr {
+  /* margin-left: 25%; */
+  margin-left: 25%;
+}
+
+.three:hover ~ hr {
+  margin-left: 50%;
+  /* margin-left: 30px; */
+}
+
+.four:hover ~ hr {
+  margin-left: 75%;
+}
+
+hr {
+  height: 0.25rem;
+  width: 25%;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: black;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
+.grid-item1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  height: 17vw;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 2vw;
+  font-size: 1vw;
+  margin-top: 10px;
+  margin-right: 3vw;
+  text-align: center;
+  width: 17vw;
 }

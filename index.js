@@ -8,22 +8,33 @@ document.addEventListener("DOMContentLoaded", loadIndex);
 
 const loadNav = () => {
   nav = document.getElementById("Nav");
-  nav.innerHTML = `       <a href="#" id="homeTab">Inicio</a>
-        <a href="#" id="commentsTab">Opiniones</a>
-        <a href="#" id="galleryTab">Galeria</a>
-        <a href="#" id="reserveTab">Mis Reservas</a>`;
+  nav.innerHTML = `      
+
+        
+<div class="container">
+  <ul>
+    <li class="one" ><a href="#" id="homeTab" >Inicio</a></li>
+    <li class="two" ><a href="#" id="commentTab">Opiniones</a></li>
+    <li class="three" ><a href="#" id="galleryTab">Galeria</a></li>
+    <li class="four" ><a href="#" id="reserveTab">Mis Reservas</a></li>
+    <hr />
+  </ul>
+</div>
+        
+        `;
   clickLinks();
 };
 
 const loadHeader = () => {
   const header = document.getElementById("Header");
   header.innerHTML = `
-     
-    <img
+     <center>
+    <img class="Header"
       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mothers-day-flower-bouquet-1588610191.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*"
       alt="header"
     />
     <img />
+     <center>
   `;
 };
 
@@ -45,6 +56,13 @@ const loadInfo = () => {
     
       </div>
 
+
+         <div class="grid-item">
+             Salixa Makeup
+         <br />• Maquillajes • Peinados • Cejas • Pestañas • Depilación
+      </div>
+
+
   
       <div class="grid-item">
         Contactar con nosotros
@@ -61,10 +79,7 @@ const loadInfo = () => {
 
       
     
-        <div class="grid-item">
-             Salixa Makeup
-         <br />• Maquillajes • Peinados • Cejas • Pestañas • Depilación
-      </div>
+     
 
       </div>
 

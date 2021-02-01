@@ -8,6 +8,6 @@ const clickLinks = () => {
   const comments = document.getElementById("commentTab");
   comments.addEventListener("click", loadComment);
 
-  const reservations = document.getElementById("reservationsTab");
+  const reservations = document.getElementById("reserveTab");
   reservations.addEventListener("click", loadReservations);
 };
